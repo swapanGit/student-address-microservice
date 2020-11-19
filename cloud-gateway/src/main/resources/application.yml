@@ -1,0 +1,42 @@
+server:
+  port: 8989
+
+
+spring:
+  application:
+    name: CLOUD-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: STUDENT-SERVICE
+          uri: lb://STUDENT-SERVICE
+          predicates:
+            - Path=/students/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: STUDENT-SERVICE
+                fallbackuri: forward:/studentServiceFallBackMethod
+        - id: ADDRESS-SERVICE
+          uri: lb://ADDRESS-SERVICE
+          predicates:
+            - Path=/addresses/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: ADDRESS-SERVICE
+                fallbackuri: forward:/addressServiceFallBackMethod
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

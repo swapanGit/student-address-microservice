@@ -1,0 +1,13 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: ADDRESS-SERVICE
+  datasource:
+    url: jdbc:h2:mem:addressdb
+  h2:
+    console:
+      enabled: true
+  zipkin:
+    base-url: http://127.0.0.1:9411/
