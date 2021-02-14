@@ -10,7 +10,7 @@ http://localhost:8761/
 # cloud-gateway
 http://localhost:8889/hystrix
 # hystrix-dashboard
-http://localhost:8989/actuator/hystrix.stream
+http://localhost:8989/actuator/hystrix.stream </br>
 http://localhost:8989/addresses/saveAddress
 http://localhost:8989/students/saveStudent
 http://localhost:8989/addresses/getAddressById/1
