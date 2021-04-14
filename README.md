@@ -1,1 +1,17 @@
 # student-address-microservice
+# address-service
+http://localhost:8091/swagger-ui/index.html </br>
+http://localhost:8091/h2-console </br>
+# student-service
+http://localhost:8092/swagger-ui/index.html </br>
+http://localhost:8092/h2-console </br>
+# service-registry
+http://localhost:8761/ </br>
+# cloud-gateway
+http://localhost:8889/hystrix </br>
+# hystrix-dashboard
+http://localhost:8989/actuator/hystrix.stream </br>
+http://localhost:8989/addresses/saveAddress </br>
+http://localhost:8989/students/saveStudent </br>
+http://localhost:8989/addresses/getAddressById/1 </br>
+http://localhost:8989/students/getStudentById/1 </br>
