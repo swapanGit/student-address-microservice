@@ -22,3 +22,8 @@ http://localhost:8989/students/getStudentById/1 </br>
 
 
 ``` Working with Openshift ```
+# prerequisite:
+1. https://www.virtualbox.org/wiki/Downloads
+2. https://github.com/minishift/minishift/releases
+
+![image](https://github.com/swapanGit/student-address-microservice/assets/47151255/00ee43f8-dc8c-4466-9614-8eabc7a780d4)
