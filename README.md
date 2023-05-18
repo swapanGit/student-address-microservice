@@ -17,3 +17,8 @@ http://localhost:8989/addresses/saveAddress </br>
 http://localhost:8989/students/saveStudent </br>
 http://localhost:8989/addresses/getAddressById/1 </br>
 http://localhost:8989/students/getStudentById/1 </br>
+
+
+
+
+``` Working with Openshift ```
